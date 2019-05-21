@@ -1,0 +1,37 @@
+<%= form_tag operations_calculate_path, :id => "form",:class => "Calc",:name => "Calc" do %>
+<table class="table">
+  <tbody>
+    <tr>
+      <th colspan="4">
+        <%= text_field_tag :Input,(@value)  %>
+      </th>
+    </tr>
+    <tr>
+      <td> <button type="button" class="btn btn-primary" name="one" value="  1  " onClick="Calc.Input.value += '1'"> 1 </button>  </td>
+      <td> <button type="button" class="btn btn-primary" name="one" value="  2  " onClick="Calc.Input.value += '2'"> 2 </button>  </td>
+      <td> <button type="button" class="btn btn-primary" name="one" value="  3  " onClick="Calc.Input.value += '3'"> 3 </button>  </td>
+      <td> <button type="button" class="btn btn-primary" name="one" value="  +  " onClick="Calc.Input.value += '+'"> + </button>  </td>
+    </tr>
+    <tr>
+      <td> <button type="button" class="btn btn-primary" name="one" value="  4  " onClick="Calc.Input.value += '4'"> 4 </button>  </td>
+      <td> <button type="button" class="btn btn-primary" name="one" value="  5  " onClick="Calc.Input.value += '5'"> 5 </button>  </td>
+      <td> <button type="button" class="btn btn-primary" name="one" value="  6  " onClick="Calc.Input.value += '6'"> 6 </button>  </td>
+      <td> <button type="button" class="btn btn-primary" name="one" value="  -  " onClick="Calc.Input.value += '-'"> - </button>  </td>
+    </tr>
+    <tr>
+      <td> <button type="button" class="btn btn-primary" name="one" value="  7  " onClick="Calc.Input.value += '1'"> 1 </button>  </td>
+      <td> <button type="button" class="btn btn-primary" name="one" value="  8  " onClick="Calc.Input.value += '2'"> 2 </button>  </td>
+      <td> <button type="button" class="btn btn-primary" name="one" value="  9  " onClick="Calc.Input.value += '3'"> 3 </button>  </td>
+      <td> <button type="button" class="btn btn-primary" name="one" value="  *  " onClick="Calc.Input.value += '*'"> x </button>  </td>
+    </tr>
+    <tr>
+      <td> <button type="button" class="btn btn-primary" name="one" value="  c  " onClick="Calc.Input.value = '' "> c </button>  </td>
+      <td> <button type="button" class="btn btn-primary" name="one" value="  0  " onClick="Calc.Input.value += '0'"> 0 </button>  </td>
+      <td>
+        <%= submit_tag('=', class: "btn btn-primary") %>
+      </td>
+      <td> <button type="button" class="btn btn-primary" name="one" value="  /  " onClick="Calc.Input.value += '/'"> / </button> </td>
+    </tr>
+  </tbody>
+</table>
+<% end %>
