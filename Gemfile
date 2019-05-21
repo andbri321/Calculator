@@ -3,6 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.2'
 
+# gem 'i18n'
+gem 'rails-i18n'
+gem 'devise-i18n'
+
 # gem 'sprockets', '3.7.2'
 gem 'sprockets', '3.6.3'
 gem "therubyracer"
